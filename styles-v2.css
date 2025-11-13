@@ -170,21 +170,20 @@ body {
 }
 
 /* SVG ICON FIX — always perfect alignment */
-.icon-svg {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .icon-list li {
     display: flex;
     align-items: center;
     gap: 14px;
     margin-bottom: 18px;
 }
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    overflow: visible;
+}
+
 
 
 
