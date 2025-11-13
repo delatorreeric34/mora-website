@@ -169,44 +169,27 @@ body {
   font-size: 0.9rem;
 }
 
-/* ICON FIX — prevent clipping */
-.icon {
-    font-size: 18px;          /* slightly smaller ensures no clipping */
-    width: 28px;              /* fixed icon box */
-    height: 28px;             /* fixed safe height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;           /* prevents icon from compressing */
-    margin-top: 3px;          /* slight downward shift to center visually */
-    color: #3b3b3b;
-}
+/* === FINAL ICON FIX (Guaranteed) === */
 
-/* LIST ITEM FIX — give the row breathing room */
 .icon-list li {
-    display: flex;
-    align-items: flex-start;
+    display: flex !important;
+    align-items: center !important;
     gap: 14px;
-    margin-bottom: 18px;
-    line-height: 1.5;          /* prevents clipping of descenders */
-}
-
-/* === Icon Fix: Prevent Cropping === */
-.icon-list li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 6px 0;
-    line-height: 1.6;        /* Ensures enough vertical room */
+    padding: 10px 0;
+    min-height: 36px;         /* FORCE enough vertical space */
 }
 
 .icon {
-    font-size: 1.35rem;       /* Slightly smaller to avoid clipping */
-    line-height: 1;           /* Neutralize the font’s built-in spacing */
-    display: inline-flex;
-    align-items: center; 
-    justify-content: center;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 22px;          /* Safe size for icons */
+    width: 28px;              /* Fixed width */
+    height: 28px;             /* Fixed height */
+    line-height: 1 !important;
+    flex-shrink: 0;
 }
+
 
 
 
