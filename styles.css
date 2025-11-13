@@ -1,13 +1,4 @@
 /* ===== Global Reset ===== */
-/* --- Hero Section Gradient --- */
-.hero {
-    background: linear-gradient(135deg, #f7f7f7, #eaeaea);
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 12px;
-    margin-bottom: 30px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +11,7 @@ body {
   color: #1a1a1a;
   line-height: 1.65;
   padding-bottom: 80px;
+    scroll-behavior: smooth;
 }
 
 /* ===== Navigation ===== */
@@ -50,29 +42,14 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-  max-width: 900px;
-  margin: 70px auto 40px;
+  background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+  padding: 60px 20px;
   text-align: center;
-  padding: 0 20px;
+  border-radius: 12px;
+  margin: 70px auto 40px;
+  max-width: 900px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: -0.8px;
-  margin-bottom: 18px;
-}
-
-.accent {
-  color: #6c63ff;
-}
-
-.hero-sub {
-  font-size: 1.25rem;
-  color: #555;
-  max-width: 650px;
-  margin: 0 auto;
-}
 
 /* ===== Card Sections ===== */
 .card {
