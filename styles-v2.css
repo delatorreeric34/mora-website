@@ -191,6 +191,24 @@ body {
     line-height: 1.5;          /* prevents clipping of descenders */
 }
 
+/* === Icon Fix: Prevent Cropping === */
+.icon-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 0;
+    line-height: 1.6;        /* Ensures enough vertical room */
+}
+
+.icon {
+    font-size: 1.35rem;       /* Slightly smaller to avoid clipping */
+    line-height: 1;           /* Neutralize the font’s built-in spacing */
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+
 
 
 
