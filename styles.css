@@ -169,6 +169,26 @@ body {
   font-size: 0.9rem;
 }
 
+/* Icon sizing fix */
+.icon {
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+/* Icon list spacing fix */
+.icon-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+
 
 
 
