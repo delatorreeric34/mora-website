@@ -41,10 +41,12 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-  max-width: 900px;
-  margin: 70px auto 40px;
+  background: linear-gradient(135deg, #faf6f0, #f2e7d8);
+  padding: 70px 20px;
   text-align: center;
-  padding: 0 20px;
+  border-radius: 16px;
+  margin: 60px auto 40px;
+  max-width: 900px;
 }
 
 .hero h1 {
@@ -55,7 +57,7 @@ body {
 }
 
 .accent {
-  color: #6c63ff;
+  color: #b3905a; /* desert sand accent */
 }
 
 .hero-sub {
@@ -63,9 +65,30 @@ body {
   color: #555;
   max-width: 650px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
-/* ===== Card Sections ===== */
+/* ===== Sand Feature Panels ===== */
+.feature-panel {
+  background: #f5e9d5;
+  padding: 50px;
+  border-radius: 18px;
+  max-width: 900px;
+  margin: 45px auto;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.feature-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-sub {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ===== Cards ===== */
 .card {
   max-width: 900px;
   margin: 50px auto;
@@ -86,20 +109,35 @@ body {
   margin-bottom: 18px;
 }
 
-/* Lists */
+/* ===== Lists + Icons ===== */
 .list {
-  padding-left: 22px;
+  padding-left: 0;
   margin-top: 10px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-/* CTA Button */
+.icon-list li {
+  list-style: none;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 1.05rem;
+}
+
+.icon {
+  font-size: 1.35rem;
+  color: #b3905a;
+  flex-shrink: 0;
+}
+
+/* ===== CTA Button ===== */
 .cta-button {
   display: inline-block;
   margin-top: 12px;
-  background: #6c63ff;
+  background: #b3905a;
   color: #ffffff;
-  padding: 12px 22px;
+  padding: 14px 26px;
   border-radius: 10px;
   text-decoration: none;
   font-size: 1rem;
@@ -108,11 +146,11 @@ body {
 }
 
 .cta-button:hover {
-  background: #5a52e6;
+  background: #9d7d4f;
   transform: translateY(-2px);
 }
 
-/* Fade-in */
+/* ===== Fade-in Animation ===== */
 .fade-in {
   opacity: 0;
   animation: fadeIn .9s ease forwards;
@@ -122,7 +160,7 @@ body {
   to { opacity: 1; }
 }
 
-/* Footer */
+/* ===== Footer ===== */
 .footer {
   text-align: center;
   margin-top: 60px;
@@ -130,6 +168,7 @@ body {
   color: #888;
   font-size: 0.9rem;
 }
+
 
 
 
