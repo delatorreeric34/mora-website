@@ -169,24 +169,28 @@ body {
   font-size: 0.9rem;
 }
 
-/* Icon sizing + vertical alignment fix */
+/* ICON FIX — prevent clipping */
 .icon {
-    font-size: 20px;          /* scale down slightly */
-    line-height: 1;           /* prevent clipping */
-    display: inline-flex;
+    font-size: 18px;          /* slightly smaller ensures no clipping */
+    width: 28px;              /* fixed icon box */
+    height: 28px;             /* fixed safe height */
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 12px;
+    flex-shrink: 0;           /* prevents icon from compressing */
+    margin-top: 3px;          /* slight downward shift to center visually */
+    color: #3b3b3b;
 }
 
-/* Ensure icons don't get clipped inside list rows */
+/* LIST ITEM FIX — give the row breathing room */
 .icon-list li {
     display: flex;
-    align-items: flex-start;   /* allows icon to breathe */
-    gap: 12px;
-    margin-bottom: 16px;
-    line-height: 1.4;          /* improves spacing */
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+    line-height: 1.5;          /* prevents clipping of descenders */
 }
+
 
 
 
