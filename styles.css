@@ -1,4 +1,13 @@
 /* ===== Global Reset ===== */
+/* --- Hero Section Gradient --- */
+.hero {
+    background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
