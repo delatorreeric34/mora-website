@@ -169,26 +169,23 @@ body {
   font-size: 0.9rem;
 }
 
-/* === FINAL ICON FIX (Guaranteed) === */
+/* SVG ICON FIX — always perfect alignment */
+.icon-svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .icon-list li {
-    display: flex !important;
-    align-items: center !important;
+    display: flex;
+    align-items: center;
     gap: 14px;
-    padding: 10px 0;
-    min-height: 36px;         /* FORCE enough vertical space */
+    margin-bottom: 18px;
 }
 
-.icon {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 22px;          /* Safe size for icons */
-    width: 28px;              /* Fixed width */
-    height: 28px;             /* Fixed height */
-    line-height: 1 !important;
-    flex-shrink: 0;
-}
 
 
 
