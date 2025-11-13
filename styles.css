@@ -169,24 +169,25 @@ body {
   font-size: 0.9rem;
 }
 
-/* Icon sizing fix */
+/* Icon sizing + vertical alignment fix */
 .icon {
-    width: 22px;
-    height: 22px;
+    font-size: 20px;          /* scale down slightly */
+    line-height: 1;           /* prevent clipping */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
-/* Icon list spacing fix */
+/* Ensure icons don't get clipped inside list rows */
 .icon-list li {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 14px;
+    align-items: flex-start;   /* allows icon to breathe */
+    gap: 12px;
+    margin-bottom: 16px;
+    line-height: 1.4;          /* improves spacing */
 }
+
 
 
 
