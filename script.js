@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const avgOrder = parseFloat(orderInput.value);
  
         if (!callsPerDay || callsPerDay <= 0 || !avgOrder || avgOrder <= 0) {
-            rMissed.textContent = '—';
-            rOrders.textContent = '—';
-            rRevenue.textContent = '—';
+            rMissed.textContent = '0';
+            rOrders.textContent = '0';
+            rRevenue.textContent = '$0';
             return;
         }
  
